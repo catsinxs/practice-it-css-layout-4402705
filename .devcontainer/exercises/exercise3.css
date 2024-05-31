@@ -10,8 +10,29 @@ img {
 
 .top {
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   justify-content: space-between;
 }
 
+  .item-3 {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+}
+
+@media (min-width:900px) {
+.item-3 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+  img {
+    max-width: 40%;
+    padding-left: 3%;
+  }
+
+  
 }
